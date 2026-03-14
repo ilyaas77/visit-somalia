@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+  text-align: center;
+
+  .cat-box {
+    @include sections;
+    max-width: 1200px;
+    @include griding;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+  .cat-cards {
+    @include cards;
+
+    width: 300px;
+    overflow: hidden;
+  }
+  img {
+    @include images;
+    border-radius: 8px;
+  }
+  h2 {
+    margin: 10px 0 0;
+  }
+}

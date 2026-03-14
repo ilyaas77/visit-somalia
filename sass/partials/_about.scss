@@ -1,0 +1,44 @@
+.container {
+  .about-sec {
+    @include flexing;
+    @include sections;
+    background-color: $last-color;
+    color: white;
+  }
+  h3,
+  p {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  i {
+    color: white;
+    transition: transform 0.3s ease-in;
+    &:hover {
+      color: $secondary-color;
+      transform: scale(1.1);
+    }
+  }
+
+  button {
+    @include buttons;
+    background-color: white;
+    color: $primary-color;
+    margin-right: 10px;
+    margin-top: 15px;
+    &:hover {
+      background-color: $secondary-color;
+      color: white;
+    }
+  }
+  .logo-1 {
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

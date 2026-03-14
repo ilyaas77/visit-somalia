@@ -1,0 +1,48 @@
+.subscribe-sec {
+  @include flexing;
+  flex-direction: column;
+  margin: 15px 0;
+  padding: 30px;
+  background-color: white;
+  h2 {
+    margin-bottom: 10px;
+  }
+  input {
+    padding: 10px 0;
+    border-radius: 8px;
+    border: 1px solid gray;
+    text-align: center;
+    width: 350px;
+    background-color: aliceblue;
+    &:focus {
+      background-color: white;
+      border: none;
+    }
+  }
+  .subs-btn {
+    @include buttons;
+    border: none;
+    padding: 11px 20px;
+    transition: transform 0.3s ease;
+    &:hover {
+      background-color: $primary-color;
+      transform: none;
+    }
+  }
+}
+
+.tetmonial-sec {
+  @include sections;
+
+  .testm-box {
+    @include flexing;
+    gap: 1.2rem;
+    margin: 15px auto;
+  }
+  .testm-cards {
+    @include cards;
+    padding: 10px 15px;
+    background-color: white;
+    color: #333;
+  }
+}

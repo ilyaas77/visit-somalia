@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  @include flexing;
+  justify-content: space-around;
+  background-color: white;
+  color: #333;
+  padding: 15px;
+  width: 100%;
+  .logo-1 {
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    color: $primary-color;
+    cursor: pointer;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    margin-right: 15px;
+  }
+  a {
+    @include links;
+  }
+  .search-box {
+    background-color: white;
+    @include flexing;
+    gap: 5px;
+  }
+  input {
+    background-color: aliceblue;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+  }
+  /*i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: $last-color;
+    @include flexing;
+  }*/
+}
+
+.hero-sec {
+  @include flexing;
+  height: 100vh;
+  @include flexing;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/EpnXHAAXIAADWTd.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: white;
+  }
+  p {
+    color: #f3f3f3;
+  }
+  .hero-btns {
+    margin: 10px 0 0 5px;
+  }
+  .btn-4 {
+    @include buttons;
+    border: none;
+    background-color: $last-color;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+  .btn-5 {
+    @extend .btn-4;
+  }
+}

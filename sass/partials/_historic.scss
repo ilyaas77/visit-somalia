@@ -1,0 +1,14 @@
+.container {
+  .historic-cities {
+    @include griding;
+  }
+  .overlay {
+    @include overlay;
+  }
+  p {
+    padding: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
