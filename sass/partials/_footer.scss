@@ -1,6 +1,7 @@
 footer {
   padding: 15px 10px;
-  background: linear-gradient(180deg, white, $last-color);
+  background-color: rgb(194, 156, 3);
+  //  background: linear-gradient(180deg, white, $last-color);
   color: #333;
   .footer-sec {
     @include flexing;

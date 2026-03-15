@@ -500,8 +500,7 @@ header input {
 
 footer {
   padding: 15px 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#3f67a8));
-  background: linear-gradient(180deg, white, #3f67a8);
+  background-color: #c29c03;
   color: #333;
 }
 
